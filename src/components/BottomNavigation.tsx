@@ -1,7 +1,7 @@
 
 import { NavLink } from 'react-router-dom';
 import { Home, Calendar, BarChart3, BookOpen, User } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 const navItems = [
   { to: '/', icon: Home, label: 'Home' },

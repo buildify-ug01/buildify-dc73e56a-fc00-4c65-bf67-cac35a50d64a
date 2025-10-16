@@ -26,19 +26,17 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
         <Router>
-          <div className="min-h-screen bg-background">
-            <Routes>
-              <Route path="/onboarding" element={<Onboarding />} />
-              <Route path="/" element={<Layout />}>
-                <Route index element={<Home />} />
-                <Route path="calendar" element={<Calendar />} />
-                <Route path="insights" element={<Insights />} />
-                <Route path="education" element={<Education />} />
-                <Route path="profile" element={<Profile />} />
-              </Route>
-            </Routes>
-            <Toaster position="top-center" />
-          </div>
+          <Routes>
+            <Route path="/onboarding" element={<Onboarding />} />
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="calendar" element={<Calendar />} />
+              <Route path="insights" element={<Insights />} />
+              <Route path="education" element={<Education />} />
+              <Route path="profile" element={<Profile />} />
+            </Route>
+          </Routes>
+          <Toaster position="top-center" />
         </Router>
       </ThemeProvider>
     </QueryClientProvider>
